@@ -30,6 +30,7 @@ gulp.task('watch', function () {
   gulp.watch('./source/js/**/*', ['move_js']);
   gulp.watch('./source/css/**/*', ['move_css']);
   gulp.watch('./source/*.html', ['move_other_files']);
+  gulp.watch('./source/[^_]*.slim', ['slim']);  
 });
 
 gulp.task('move_other_files', function(){

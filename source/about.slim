@@ -1,0 +1,78 @@
+include header.slim
+
+/! START OF: Team 02 =====
+.team-02
+  .container.container--small
+    .team-02__title_box
+      img.team-02__decoration src="img/other/grid.png" /
+      h1.heading
+        | Team
+      p Hi, we're the team behind Apparatus. 
+  ul.team-02__list
+    li.team-02__person
+      .team-02__person_box
+        .team-02__person_img style=("background-image: url(img/other/nikhil.jpeg)") 
+        .team-02__person_name Nikhil Aitharaju
+        .team-02__person_tag
+          span.tag.tag--magenta
+            span.tag__text Founder
+        p.team-02__person_about Nik was previously CTO at TINT where he created a world-class marketing technology product that powered social displays for over 5,000+ customers.
+        .team-02__person_social
+          .social-buttons
+            ul.social-buttons__list
+              li.social-buttons__item
+                a.social-buttons__link href="https://www.linkedin.com/in/nikhilaitharaju/" target="_blank" 
+                  img.social-buttons__icon src="img/icons/social/black/linkedin.svg" /
+              li.social-buttons__item
+                a.social-buttons__link href="https://github.com/aitharaju" target="_blank" 
+                  img.social-buttons__icon src="img/icons/social/black/github.svg" /
+    li.team-02__person
+      .team-02__person_box
+        .team-02__person_img style=("background-image: url(img/other/ryo.jpeg)") 
+        .team-02__person_name Ryo Chiba
+        .team-02__person_tag
+          span.tag.tag--magenta
+            span.tag__text Founder
+        p.team-02__person_about Ryo was previously COO / Head of Marketing at TINT, where he used SEO and growth tactics to grow the business to 5M ARR, relying purely on inbound marketing.
+        .team-02__person_social
+          .social-buttons
+            ul.social-buttons__list
+              li.social-buttons__item
+                a.social-buttons__link href="https://www.linkedin.com/in/ryochiba/" target="_blank" 
+                  img.social-buttons__icon src="img/icons/social/black/linkedin.svg" /
+              li.social-buttons__item
+                a.social-buttons__link href="https://github.com/rchiba" target="_blank" 
+                  img.social-buttons__icon src="img/icons/social/black/github.svg" /
+              li.social-buttons__item
+                a.social-buttons__link href="http://ryochiba.com/" target="_blank" 
+                  img.social-buttons__icon src="img/icons/social/black/wordpress.svg" /
+/! ===== END OF: Team 02
+/! This is the root element of the image gallery plugin - PhotoSwipe (https://github.com/dimsemenov/PhotoSwipe)
+/! Do not delete it.
+/! It's invisible to user.
+.pswp aria-hidden="true" role="dialog" tabindex="-1" 
+  .pswp__bg
+  .pswp__scroll-wrap
+    .pswp__container
+      .pswp__item
+      .pswp__item
+      .pswp__item
+    .pswp__ui.pswp__ui--hidden
+      .pswp__top-bar
+        .pswp__counter
+        button.pswp__button.pswp__button--close title=("Close (Esc)") 
+        button.pswp__button.pswp__button--share title="Share" 
+        button.pswp__button.pswp__button--fs title=("Toggle fullscreen") 
+        button.pswp__button.pswp__button--zoom title=("Zoom in/out") 
+        .pswp__preloader
+          .pswp__preloader__icn
+            .pswp__preloader__cut
+              .pswp__preloader__donut
+      .pswp__share-modal.pswp__share-modal--hidden.pswp__single-tap
+        .pswp__share-tooltip
+      button.pswp__button.pswp__button--arrow--left title=("Previous (arrow left)") 
+      button.pswp__button.pswp__button--arrow--right title=("Next (arrow right)") 
+      .pswp__caption
+        .pswp__caption__center
+
+include footer.slim
