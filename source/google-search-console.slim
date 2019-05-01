@@ -1,0 +1,264 @@
+doctype html
+html
+  head
+    meta charset="utf-8" /
+    meta content="width=device-width, initial-scale=1" name="viewport" /
+    link href="css/main.css" rel="stylesheet" /
+    link href="css/custom.css" rel="stylesheet" /
+    script defer="" src="js/main.js" 
+    link href="https://fonts.googleapis.com/css?family=Lato:400,700|Lora" rel="stylesheet" /
+    link href="favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" /
+    link href="favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" /
+    title Feeling limited by Google Search Console?
+    meta name="description" content="We built Apparatus to make Google Search Console more useful. Find content optimization opportunities, run experiments, and analyze the results."
+  body
+    style  
+      |
+        .google-search-console-callouts{
+          background-image: url(img/photos/header-callouts.png);
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          z-index: 2;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        .press-01__item{
+          margin-left:20px;
+          margin-right:20px;
+        }
+        .press-01__list{
+          margin-top:20px;
+        }
+        .steps-03__text{
+          max-width: 190px;
+        }
+        .cta_button-16, .header-01{
+          background-image: linear-gradient(0deg, #e2dffe 0%, #ffffff 100%);
+        }
+        .cta_button-16__wrapper{
+          border: none;
+        }
+        .cta_button-16 .heading{
+        }
+        .press-01__logo{
+          max-height:none;
+        }
+
+        @media (max-width: 900px){
+          .nav-01{
+            background-color: white;
+          }
+        }
+
+    /! START OF: Header 1 =====
+    header.header-01.js-scroll-this-box
+      /! START OF: Nav 1 =====
+      nav.nav-01
+        .container
+          .nav-01__box
+            .nav-01__logo
+              img.nav-01__logo_img alt=("Apparatus Logo") src="img/photos/apparatus_logo.png" /
+              span.nav-01__logo_text Apparatus
+      /! ===== END OF: Nav 1
+      .header-01__box
+        .container
+          h1.heading.heading--accent.header-01__heading
+            | Feeling&nbsp;
+            span.heading__accent_word.heading__accent_word--white.js-scroll-down limited
+            | &nbsp;by Google Search Console?
+          .header-01__buttons.buttons-set style="display:none;"
+            ul.buttons-set__list
+              li.buttons-set__item
+                a.button.button--alt-accent-bg href="javascript:void(0);" target="" 
+                  span Try it For Free
+              li.buttons-set__item
+                button.button.js-scroll-down.button--white-bg type="submit" 
+                  span.button__text Learn More
+          .header-01__mockup
+            .mockup.mockup--white.mockup--macbook.mockup--landscape
+              .mockup__container
+                .google-search-console-callouts
+                .mockup__case
+                  .mockup__spacer
+                  .mockup__screen
+                    .mockup__screenshot style=("background-image: url(img/photos/google-search-console.png)") 
+                img.mockup__bottom src="img/other/macbook-mockup-shadow.png" /
+    /! ===== END OF: Header 1
+    /! START OF: Tabs 01 =====
+    .tabs-01
+      .container.container--small
+        .tabs-01__title_box
+          h1.heading We built Apparatus to make Google Search Console more useful
+          p Apparatus connects to your Google Search Console and helps you find content optimization opportunities, run experiments, and analyze the results. All using 100% reliable Google data.
+          .cta_button-16__button_box
+            .buttons-set
+              ul.buttons-set__list
+                li.buttons-set__item
+                  a.button.button--alt-accent-bg href="javascript:void(0);" target="" 
+                    span Try it For Free
+      .container
+        .tabs-01__box
+          ul.tabs-01__buttons_list
+            li.tab
+              button.tab__button.state-active-tab.js-open-tab data-group="my-images-group-1" data-index="tab-12" type="button"  Find Opportunities
+            li.tab
+              button.tab__button.js-open-tab data-group="my-images-group-1" data-index="tab-13" type="button"  Run Experiments
+            li.tab
+              button.tab__button.js-open-tab data-group="my-images-group-1" data-index="tab-14" type="button"  Explore Data
+          .tabs-01__img_container
+            ul.tabs-01__img_list.js-tabs-item-list
+              li.tabs-01__img_box.js-tab-content.state-active-tab data-group="my-images-group-1" data-index="tab-12" 
+                img.tabs-01__img.js-tab-content-item src="img/photos/gsc-2.png" /
+              li.tabs-01__img_box.js-tab-content data-group="my-images-group-1" data-index="tab-13" 
+                img.tabs-01__img.js-tab-content-item src="img/photos/gsc-3.png" /
+              li.tabs-01__img_box.js-tab-content data-group="my-images-group-1" data-index="tab-14" 
+                img.tabs-01__img.js-tab-content-item src="img/photos/gsc-1.png" /
+    /! ===== END OF: Tabs 01
+    /! START OF: Press 01 =====
+    .press-01
+      .container
+        h2.heading Trusted By
+        ul.press-01__list
+          /! Please specify the height of each logo manually.
+          li.press-01__item
+            img.press-01__logo height="33" src="img/logos/companies/credit_karma.png" /
+          li.press-01__item
+            img.press-01__logo height="90" src="img/logos/companies/qualaroo.png" /
+          li.press-01__item
+            img.press-01__logo height="50" src="img/logos/companies/filestack.png" /
+          li.press-01__item
+            img.press-01__logo height="40" src="img/logos/companies/tint.png" /
+    /! ===== END OF: Press 01
+    /! START OF: Features 4 =====
+    .features-04
+      .container.container--small
+        .features-04__title_box
+          .subheading Explore The Key Features
+          h2.heading.heading--accent Google Search Console, Supercharged
+      .container
+        ul.features-04__items
+          li.features-04__item
+            .feature.feature--center
+              h3.feature__title
+                img.feature__icon src="img/icons/abstract_icons/abstract-icon-11.svg" /
+                span.feature__title_text Find New Opportunities
+              p.feature__content
+                span We analyze all of your pages and finds opportunities to optimize your content. Use our keyword suggestions to rank for keywords that you didn’t even know you could rank for!
+          li.features-04__item
+            .feature.feature--center
+              h3.feature__title
+                img.feature__icon src="img/icons/abstract_icons/abstract-icon-1.svg" /
+                span.feature__title_text Maintain Existing Traffic
+              p.feature__content
+                span Don't let your best content slip in search position. We let you know if your organic traffic drops due to competition and what you can do to bring it back.
+          li.features-04__item
+            .feature.feature--center
+              h3.feature__title
+                img.feature__icon src="img/icons/abstract_icons/abstract-icon-6.svg" /
+                span.feature__title_text Run Experiments
+              p.feature__content
+                span Stop manually tracking search metrics after a change to your site. We makes it easy to set up an experiment so you can see the impact of your work at a glance.
+          li.features-04__item
+            .feature.feature--center
+              h3.feature__title
+                img.feature__icon src="img/icons/abstract_icons/abstract-icon-9.svg" /
+                span.feature__title_text Export Data
+              p.feature__content
+                span Stop struggling with API’s and rate limits. We let you download and export your search data, all without the need for a developer.
+          li.features-04__item
+            .feature.feature--center
+              h3.feature__title
+                img.feature__icon src="img/icons/abstract_icons/abstract-icon-10.svg" /
+                span.feature__title_text Keep It Forever
+              p.feature__content
+                span Google Search Console only saves your data for a limited time. We automatically saves it indefinitely so you don’t lose valuable data.
+          li.features-04__item
+            .feature.feature--center
+              h3.feature__title
+                img.feature__icon src="img/icons/abstract_icons/abstract-icon-8.svg" /
+                span.feature__title_text Advanced queries
+              p.feature__content
+                span Filter your search data in ways that are impossible to do in Google Search Console. Use advanced queries to filter and compare impressions, clicks, ctr, and position.
+    /! ===== END OF: Features 4
+    /! START OF: Features 5 =====
+    .features-05
+      .container.container--small
+        .title-box.title-box--center
+          h2.heading For Marketers and SEOs
+      .container
+        .features-05__items__wrapper
+          .features-05__item_box
+            h3.features-05__item_title For Search Marketers
+            ul.features-05__items
+              li.features-05__item
+                img.features-05__item_icon src="img/icons/checked--blue.svg" /
+                .features-05__item_text Easily run SEO experiments
+              li.features-05__item
+                img.features-05__item_icon src="img/icons/checked--blue.svg" /
+                .features-05__item_text Guide your content team
+              li.features-05__item
+                img.features-05__item_icon src="img/icons/checked--blue.svg" /
+                .features-05__item_text Deliver big SEO wins
+          .features-05__item_box
+            h3.features-05__item_title For Content Marketers
+            ul.features-05__items
+              li.features-05__item
+                img.features-05__item_icon src="img/icons/checked--blue.svg" /
+                .features-05__item_text Optimize content for search
+              li.features-05__item
+                img.features-05__item_icon src="img/icons/checked--blue.svg" /
+                .features-05__item_text Grow organic traffic
+              li.features-05__item
+                img.features-05__item_icon src="img/icons/checked--blue.svg" /
+                .features-05__item_text Prove the impact of your content strategy
+          .features-05__item_box
+            h3.features-05__item_title For Marketing Leaders
+            ul.features-05__items
+              li.features-05__item
+                img.features-05__item_icon src="img/icons/checked--blue.svg" /
+                .features-05__item_text Master your organic channel
+              li.features-05__item
+                img.features-05__item_icon src="img/icons/checked--blue.svg" /
+                .features-05__item_text Empower your team with the best data
+    /! ===== END OF: Features 5
+    /! START OF: Button 16 =====
+    .cta_button-16.js-scroll-this-box
+      .cta_button-16__wrapper.container.container--mid
+        .title-box.title-box--center
+          h2.heading Try Apparatus for Free
+          p.title-box__text Connect Google Search Console to begin analyzing your site
+        .cta_button-16__button_box
+          .buttons-set
+            ul.buttons-set__list
+              li.buttons-set__item
+                a.button.button--alt-accent-bg href="javascript:void(0);" target="" 
+                  span Try it For Free
+    /! ===== END OF: Button 16
+    /! This is the root element of the image gallery plugin - PhotoSwipe (https://github.com/dimsemenov/PhotoSwipe)
+    /! Do not delete it.
+    /! It's invisible to user.
+    .pswp aria-hidden="true" role="dialog" tabindex="-1" 
+      .pswp__bg
+      .pswp__scroll-wrap
+        .pswp__container
+          .pswp__item
+          .pswp__item
+          .pswp__item
+        .pswp__ui.pswp__ui--hidden
+          .pswp__top-bar
+            .pswp__counter
+            button.pswp__button.pswp__button--close title=("Close (Esc)") 
+            button.pswp__button.pswp__button--share title="Share" 
+            button.pswp__button.pswp__button--fs title=("Toggle fullscreen") 
+            button.pswp__button.pswp__button--zoom title=("Zoom in/out") 
+            .pswp__preloader
+              .pswp__preloader__icn
+                .pswp__preloader__cut
+                  .pswp__preloader__donut
+          .pswp__share-modal.pswp__share-modal--hidden.pswp__single-tap
+            .pswp__share-tooltip
+          button.pswp__button.pswp__button--arrow--left title=("Previous (arrow left)") 
+          button.pswp__button.pswp__button--arrow--right title=("Next (arrow right)") 
+          .pswp__caption
+            .pswp__caption__center
