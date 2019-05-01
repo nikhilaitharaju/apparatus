@@ -5,12 +5,17 @@ html
     meta content="width=device-width, initial-scale=1" name="viewport" /
     link href="css/main.css" rel="stylesheet" /
     link href="css/custom.css" rel="stylesheet" /
+    script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
     script defer="" src="js/main.js" 
     link href="https://fonts.googleapis.com/css?family=Lato:400,700|Lora" rel="stylesheet" /
     link href="favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" /
     link href="favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" /
     title Feeling limited by Google Search Console?
     meta name="description" content="We built Apparatus to make Google Search Console more useful. Find content optimization opportunities, run experiments, and analyze the results."
+    include fullstory.slim
+    include hubspot.slim
+    script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"
+    link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
   body
     style  
       |
@@ -51,6 +56,10 @@ html
           }
         }
 
+        .blocker{
+          z-index:100;
+        }
+
     /! START OF: Header 1 =====
     header.header-01.js-scroll-this-box
       /! START OF: Nav 1 =====
@@ -71,7 +80,7 @@ html
             ul.buttons-set__list
               li.buttons-set__item
                 a.button.button--alt-accent-bg href="javascript:void(0);" target="" 
-                  span Try it For Free
+                  span Get Early Access
               li.buttons-set__item
                 button.button.js-scroll-down.button--white-bg type="submit" 
                   span.button__text Learn More
@@ -95,8 +104,8 @@ html
             .buttons-set
               ul.buttons-set__list
                 li.buttons-set__item
-                  a.button.button--alt-accent-bg href="javascript:void(0);" target="" 
-                    span Try it For Free
+                  a.button.button--alt-accent-bg.open-modal target="" href="#signup-modal" rel="modal:open"
+                    span Get Early Access
       .container
         .tabs-01__box
           ul.tabs-01__buttons_list
@@ -232,8 +241,8 @@ html
           .buttons-set
             ul.buttons-set__list
               li.buttons-set__item
-                a.button.button--alt-accent-bg href="javascript:void(0);" target="" 
-                  span Try it For Free
+                a.button.button--alt-accent-bg.open-modal target="" href="#signup-modal" rel="modal:open"
+                  span Get Early Access
     /! ===== END OF: Button 16
     /! This is the root element of the image gallery plugin - PhotoSwipe (https://github.com/dimsemenov/PhotoSwipe)
     /! Do not delete it.
@@ -262,3 +271,16 @@ html
           button.pswp__button.pswp__button--arrow--right title=("Next (arrow right)") 
           .pswp__caption
             .pswp__caption__center
+    div id="signup-modal" class="modal"
+      h3 Enter your email to sign up for early access.
+      p As soon as we launch, we'll send you an email with instructions on how to get started.
+      |
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+        <script>
+          hbspt.forms.create({
+          portalId: "5835537",
+          formId: "d1f4dba8-8581-4fc4-9f28-8eb7bd300840"
+        });
+        </script>
+
+
