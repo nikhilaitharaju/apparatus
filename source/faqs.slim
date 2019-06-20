@@ -1,0 +1,59 @@
+- @title = "Frequently Asked Questions about Apparatus"
+- @description = "Learn the ins-and-outs of our Agile SEO Platform. Have an unanswered question? Email us!"
+include header.slim
+style
+  | .nav-faqs{background-color: rgba(233, 241, 255, 0.7);}
+/! START OF: FAQ 02 =====
+.faq-02
+  .container.container--small
+    .title-box.title-box--center
+      h2.heading
+        | Frequently Asked Questions
+        img.emoji alt="Emoji" src="img/emoji/chatbot.png" /
+      p.title-box__text Have an unanswered question? Email us at admin@useapparatus.com
+  .container.faq-02__container
+    /! Please fill in both columns (ul.faq-02__list) with questions.
+    /! There are 2 columns to achieve the masorny effect without JS interruption.
+    ul.faq-02__list
+      li.faq-02__item
+        img.faq-02__icon src="img/icons/help.svg" /
+        h2.faq-02__question_heading How does Googlebot interpret the changes made through Apparatus?
+        .faq-02__answer
+          p Because the changes are made server-side, Googlebot will reliably pick up the changes as soon as it crawls the page. No client-side JavaScript execution is necessary for Apparatus.
+      li.faq-02__item
+        img.faq-02__icon src="img/icons/help.svg" /
+        h2.faq-02__question_heading What if I’m using a different CDN provider?
+        .faq-02__answer
+          p CloudFlare can simply sit on top of an existing CDN and provide the same functionality with minimal latency.
+      li.faq-02__item
+        img.faq-02__icon src="img/icons/help.svg" /
+        h2.faq-02__question_heading What if I accidentally deploy an incorrect code change?
+        .faq-02__answer
+          p Accidental code changes can be rolled back immediately through the interface. We also have features within the platform that will enable you to deploy changes with higher confidence such as:
+          ul
+            li Integrations with your dev/staging/test environment to ensure that changes can be tested thoroughly 
+            li Chrome extension to preview your changes from the browser
+            li Apparatus also comes with a “kill switch” that will disable it and allow requests to pass through the CDN unmodified.
+      li.faq-02__item
+        img.faq-02__icon src="img/icons/help.svg" /
+        h2.faq-02__question_heading How can we ensure the changes are moved from Apparatus to our code base eventually?
+        .faq-02__answer
+          p We understand the importance of keeping your code base up-to-date with changes made within Apparatus. Hence, we provide an audit trail of all the changes made to your site at any given time (also available in the form of user stories) that you can pass on to your engineering team for implementation.
+    ul.faq-02__list
+      li.faq-02__item
+        img.faq-02__icon src="img/icons/help.svg" /
+        h2.faq-02__question_heading Can we limit deployment access to only a few team members?
+        .faq-02__answer
+          p Yes, we support granular user management controls to ensure only team members with deployment access can deploy the changes.
+      li.faq-02__item
+        img.faq-02__icon src="img/icons/help.svg" /
+        h2.faq-02__question_heading How much latency does Apparatus introduce?
+        .faq-02__answer
+          p Less than 50 ms.
+      li.faq-02__item
+        img.faq-02__icon src="img/icons/help.svg" /
+        h2.faq-02__question_heading How resilient is the system?
+        .faq-02__answer
+          p Because we leverage Cloudflare’s infrastructure, requests that Apparatus serves use an expansive global network of 180 data centers. This ensures a high degree of reliability and continuous availability.  See Cloudflare’s CDN Reliability page for more details.
+
+include footer.slim

@@ -1,0 +1,29 @@
+.jquery-modal{
+  z-index:200;
+}
+
+.faq-02__item li{
+  margin-bottom:10px;
+  font-family: "Lora", serif;
+}
+.cta_button-12__emoji{
+  top: -60px;
+  height: 80px;
+  width: auto;
+}
+.cta_button-12__box{
+  min-width:270px;
+  width:270px;
+}
+.cta_button-12__header {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.cta_button-12__overlay{
+    background: linear-gradient(0deg, rgba(81,15,224,1) 0%, rgba(137,34,242,1) 100%);
+}
+
+.blocker{
+  z-index:10 !important;
+}

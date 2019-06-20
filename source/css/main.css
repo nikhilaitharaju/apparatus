@@ -103,7 +103,7 @@ textarea:focus {
 
 header {
   position: relative;
-  z-index: 50; }
+}
 
 a, .link, .links-02__link, .links-04__link, .links-05__link, .links-06__link {
   color: #5211e6;
