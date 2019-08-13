@@ -1,8 +1,8 @@
 var gulp = require('gulp');
 var slim = require("gulp-slim");
 
-gulp.task('default', ['slim', 'move_images', 'move_js', 'move_css', 'move_other_files', 'watch']);
-gulp.task('build', ['slim', 'move_images', 'move_js', 'move_css', 'move_other_files']);
+gulp.task('default', ['slim', 'move_images', 'move_js', 'move_css', 'move_demo', 'move_other_files', 'watch']);
+gulp.task('build', ['slim', 'move_images', 'move_js', 'move_css', 'move_demo','move_other_files']);
  
 gulp.task('slim', function(){
   gulp.src("./source/**/[^_]*.slim")
@@ -25,10 +25,16 @@ gulp.task('move_css', function(){
     .pipe(gulp.dest("./dist/css/"));
 });
 
+gulp.task('move_demo', function(){
+  gulp.src("./source/demo/**/*")
+    .pipe(gulp.dest("./dist/demo/"));
+});
+
 gulp.task('watch', function () {
   gulp.watch('./source/img/**/*', ['move_images']);
   gulp.watch('./source/js/**/*', ['move_js']);
   gulp.watch('./source/css/**/*', ['move_css']);
+  gulp.watch('./source/demo/**/*', ['move_demo']);
   gulp.watch('./source/*.html', ['move_other_files']);
   gulp.watch('./source/[^_]*.slim', ['slim']);  
 });
